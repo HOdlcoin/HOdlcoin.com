@@ -113,8 +113,14 @@
 		document.getElementById("totalrate").innerHTML=Number(curbonusrate+maxStandardRate).toFixed(5)+"%";
 		//alert("blockEstimate:"+totalBlocks);
 		
-		days=0+document.getElementById("days").value;
-		principal=0+document.getElementById("principal").value;
+		days=Number(document.getElementById("days").value);
+		principal=Number(document.getElementById("principal").value);
+		
+
+		if(days>365){
+			days=365;
+			}
+		
 		
 		termDepositStandardInterest=(Math.pow((1+(1/Math.pow(2,22))),(561*days))-1)*principal;
 		termDepositBonusInterest=(Math.pow((1+(1/Math.pow(2,16))),(561*days))-1)*Math.pow(((409530-totalBlocks)/409530),4)*principal;
@@ -126,8 +132,10 @@
 		document.getElementById("tdbonusinterest").innerHTML=Number(termDepositBonusInterest).toFixed(8);
 		document.getElementById("tdtotalinterest").innerHTML=Number(termDepositStandardInterest+termDepositBonusInterest).toFixed(8);
 		
-		termDepositMultiplier =(1-Math.pow(((409530-561*days)/409530),6));
-		
+		termDepositMultiplier =0;
+		if(days>2){
+			termDepositMultiplier =(1-Math.pow(((409530-561*days)/409530),6));
+		}
 		document.getElementById("tdmultiplier").innerHTML=Number(termDepositMultiplier).toFixed(8);
 		tdBonus=(termDepositStandardInterest+termDepositBonusInterest)*termDepositMultiplier;
 		
