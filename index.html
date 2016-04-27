@@ -46,7 +46,8 @@
 			<tr><td>Current Bonus Rate:</td><td align="right"> <div id="bonusrate"></div></td></tr>
 			<tr><td>Standard Rate:</td><td align="right"> <div id="standardrate"></div></td></tr>
 			<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
-			<tr><td>Total:</td><td align="right"> <div id="totalrate"></div></td></tr>
+			<tr><td>Total APR:</td><td align="right"> <div id="totalrate"></div></td></tr>
+			<tr><td>Daily Rate:</td><td align="right"> <div id="dailyrate"></div></td></tr>
 			</table>
 		</header>
                     <section>
@@ -108,9 +109,19 @@
 		totalBlocks=totalSeconds/154-944;
 		curbonusrate=maxBonusRate*Math.pow(((409530-totalBlocks)/409530),4);
 		
+		//Daily Rates
+		dailyBonusRate=(Math.pow((1+(1/Math.pow(2,16))),(561))-1)*100;
+		dailyStandardRate=(Math.pow((1+(1/Math.pow(2,22))),(561))-1)*100;
+		
+		curDailyBonusRate=dailyBonusRate*Math.pow(((409530-totalBlocks)/409530),4);
+		
+		
 		document.getElementById("bonusrate").innerHTML=Number(curbonusrate).toFixed(5)+"%";
 		
 		document.getElementById("totalrate").innerHTML=Number(curbonusrate+maxStandardRate).toFixed(5)+"%";
+		
+		document.getElementById("dailyrate").innerHTML=Number(curDailyBonusRate+dailyStandardRate).toFixed(5)+"%";
+		
 		//alert("blockEstimate:"+totalBlocks);
 		
 		days=Number(document.getElementById("days").value);
