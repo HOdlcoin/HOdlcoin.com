@@ -1,0 +1,355 @@
+a:hover {
+    text-decoration: none;
+}
+
+.intro-class {
+    padding-top: 5em;
+    background:linear-gradient(135deg, #172a74, #21a9af);
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    position: relative;
+    width: 100%;
+    min-height: 600px
+}
+
+.intro-title {
+    text-transform: uppercase !important;
+}
+
+.section-title {
+    margin-top: 50px !important;
+    text-transform: uppercase !important;
+}
+
+.section-subtitle {
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.intro-message {
+    line-height: 1.5em;
+    font-size: 1.5em;
+    padding: 1.5em 0;
+}
+
+.intro-message2 {
+	text-transform: uppercase;
+    line-height: 1.5em;
+    font-size: 1.25em;
+    padding-bottom: 2em;
+}
+
+.intro-logo {
+    padding-bottom: 3em;
+}
+
+.coinmarketcap {
+    padding-bottom: 3em;
+}
+
+/*////////////////////////////////////////////////////////////////////////*/
+
+.specifications-class { 
+    margin-top: 50px;
+}
+
+.specifications2 {
+    margin-top: 50px;
+}
+
+.specifications2 h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.specifications-box {
+    border: 1px solid #CCE7F5;
+    border-radius: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.specifications-class .icon {
+    margin-top: 30px;
+}
+
+.specifications-class .icon-purple  {
+  width: 120px;
+  height: 120px;
+  /*border-radius: 60px;
+  border: solid 1px #999;*/
+  font-size: 60px;
+  line-height: 120px;
+  text-align: center;
+  margin: 0 auto;
+  color: #9C27B0;
+}
+
+.specifications-class .icon-green  {
+  width: 120px;
+  height: 120px;
+  /*border-radius: 60px;
+  border: solid 1px #999;*/
+  font-size: 60px;
+  line-height: 120px;
+  text-align: center;
+  margin: 0 auto;
+  color: #4CAF50;
+}
+
+.specifications-class .icon-orange  {
+  width: 120px;
+  height: 120px;
+  /*border-radius: 60px;
+  border: solid 1px #999;*/
+  font-size: 60px;
+  line-height: 120px;
+  text-align: center;
+  margin: 0 auto;
+  color: #FF9800;
+}
+
+.specifications-class .icon-blue  {
+  width: 120px;
+  height: 120px;
+  /*border-radius: 60px;
+  border: solid 1px #999;*/
+  font-size: 60px;
+  line-height: 120px;
+  text-align: center;
+  margin: 0 auto;
+  color: #01579B;
+}
+
+.specifications-class .icon-yellow  {
+  width: 120px;
+  height: 120px;
+  /*border-radius: 60px;
+  border: solid 1px #999;*/
+  font-size: 60px;
+  line-height: 120px;
+  text-align: center;
+  margin: 0 auto;
+  color: #FFEB3B;
+}
+
+.specifications-class .icon-red  {
+  width: 120px;
+  height: 120px;
+  /*border-radius: 60px;
+  border: solid 1px #999;*/
+  font-size: 60px;
+  line-height: 120px;
+  text-align: center;
+  margin: 0 auto;
+  color: #F44336;
+}
+
+/*////////////////////////////////////////////////////////////////////////*/
+
+.wallet-class{
+    background: #134E5E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #71B280, #134E5E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+.wallet-download{
+    padding: 2rem;
+    margin-top: 3rem;
+    text-align: center;
+    background-color: #fff; 
+    color: #222;
+    border-radius: 5px;
+}
+
+.wallet-download h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.wallet-icon {
+    margin: 20px 20px;
+}
+
+.btn-success {
+    margin-left: 10px;
+}
+
+/*////////////////////////////////////////////////////////////////////////*/
+
+.hodl {
+    padding-bottom: 50px;
+}
+
+/*////////////////////////////////////////////////////////////////////////*/
+
+.gethodl {
+    background: #e43a15;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e65245, #e43a15);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e65245, #e43a15); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+}
+
+.gethodl-box{
+    background-color: #fdfdfd;
+    border-radius: 15px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 1px #d4d4d4;
+}
+
+.gethodl-box img {
+    padding: 10px 10px;
+}
+
+/*////////////////////////////////////////////////////////////////////////*/
+
+.join h3 {
+    text-transform: uppercase;
+}
+
+.facebook {
+    border: 1px solid #3B5998;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 10px 10px;
+}
+
+.facebook:hover {
+    color: #3B5998;
+}
+
+.twitter {
+    border: 1px solid #4099FF;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 10px 10px;
+}
+
+.twitter:hover {
+    color: #4099FF;
+}
+
+.youtube {
+    border: 1px solid #cc181e;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 10px 10px;
+}
+
+.youtube:hover {
+    color: #cc181e;
+}
+
+.instagram {
+    border: 1px solid #DE4071;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 10px 10px;
+}
+
+.instagram:hover {
+    color: #DE4071;
+}
+
+.telegram {
+    border: 1px solid #0088cc;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 10px 10px;
+}
+
+.telegram:hover {
+    color: #0088cc;
+}
+
+.discord {
+    border: 1px solid #99aab5;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 10px 10px;
+}
+
+.discord:hover {
+    color: #99aab5;
+}
+
+.bitcointalk {
+    border: 1px solid #FF9900;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 10px 10px;
+}
+
+.bitcointalk:hover {
+    color: #FF9900;
+}
+
+.hodlday {
+    border: 1px solid #9C27B0;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 10px 10px;
+}
+
+.hodlday:hover {
+    color: #9C27B0;
+}
+
+
+/*////////////////////////////////////////////////////////////////////////*/
+
+.faq {
+    background: #AA076B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #61045F, #AA076B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #61045F, #AA076B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff !important;
+}
+
+.faq-title {
+    color: #fff !important;
+}
+
+.panel-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px; 
+    color: #fff !important;
+}
+
+.panel-title a{
+    color: #fff !important;
+    font-weight: 600;
+}
+
+.panel-title a:hover {
+    color: purple;
+    text-decoration: none;
+}
+
+.panel-body {
+    color: #fff !important;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    padding: 15px 0;
+}
+
+#accordion {
+    padding: 25px 15px;
+}
+
+.signup {
+    padding: 50px 0;
+}
+
+
+.footer {
+        background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    padding: 50px 0;
+}
