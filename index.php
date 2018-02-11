@@ -79,19 +79,20 @@
 									$market = $data[0]["market_cap_usd"];
 									$volume = $data[0]["24h_volume_usd"];  
 									$supply = $data[0]["available_supply"];
-									$total = $data[0]["total_supply"];   ?>   
-								<div class="col-md-3 coinmarketcap">
-									<strong>Market Cap</strong><br> <? echo $market; ?> USD
-								</div>
-								<div class="col-md-3 coinmarketcap">
-									<strong>Volume (24h)</strong><br><? echo $volume; ?> USD
-								</div>
-								<div class="col-md-3 coinmarketcap">
-									<strong>Circulating Supply</strong><br><? echo $supply; ?> HODL
-								</div>
-								<div class="col-md-3 coinmarketcap">
-									<strong>Total Supply</strong><br><? echo $total; ?> HODL
-								</div>               
+									$total = $data[0]["total_supply"];  
+								echo "<div class='col-md-3 coinmarketcap'>";
+									echo "<strong>Market Cap</strong><br> {$market} USD";
+								echo "</div>";
+								echo "<div class='col-md-3 coinmarketcap'>";
+									echo "<strong>Volume (24h)</strong><br> {$volume} USD";
+								echo "</div>";
+								echo "<div class='col-md-3 coinmarketcap'>";
+									"<strong>Circulating Supply</strong><br> {$supply} HODL";
+								echo "</div>";
+								echo "<div class='col-md-3 coinmarketcap'>";
+									echo "<strong>Total Supply</strong><br> {$total} HODL";
+								echo "</div>";
+		    						?> 
 		</div>
         </div>
 </section>
