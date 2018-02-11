@@ -87,7 +87,7 @@
 									echo "<strong>Volume (24h)</strong><br> {$volume} USD";
 								echo "</div>";
 								echo "<div class='col-md-3 coinmarketcap'>";
-									"<strong>Circulating Supply</strong><br> {$supply} HODL";
+									echo "<strong>Circulating Supply</strong><br> {$supply} HODL";
 								echo "</div>";
 								echo "<div class='col-md-3 coinmarketcap'>";
 									echo "<strong>Total Supply</strong><br> {$total} HODL";
