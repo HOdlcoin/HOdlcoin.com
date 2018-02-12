@@ -70,11 +70,23 @@
 					<h3 class="intro-message2">The serious cryptocurrency that doesn't take itself too seriously</h3>
                 </div>
 
-                <!-- CoinMarketCap API -->
-
-                <div class="col-md-3 coinmarketcap"><strong>Market Cap</strong><br>1538787.0 USD</div><div class="col-md-3 coinmarketcap"><strong>Volume (24h)</strong><br>150.515 USD</div><div class="col-md-3 coinmarketcap"><strong>Circulating Supply</strong><br>145343935.0 HODL</div><div class="col-md-3 coinmarketcap"><strong>Total Supply</strong><br>160000000.0 HODL</div>            </div>
-              
-		</div>
+                <!-- *** CoinMarketCap API***
+                _________________________________________________________ -->
+  
+				<div class="col-md-3 coinmarketcap">
+					<strong>Market Cap</strong><br> <span id="coinmarketapi-marketcap">Loading</span> USD
+				</div>
+				<div class="col-md-3 coinmarketcap">
+					<strong>Volume (24h)</strong><br> <span id="coinmarketapi-volume">Loading</span> USD
+				</div>
+				<div class="col-md-3 coinmarketcap">
+					<strong>Circulating Supply</strong><br> <span id="coinmarketapi-supply">Loading</span> HODL
+				</div>
+				<div class="col-md-3 coinmarketcap">
+					<strong>Total Supply</strong><br> <span id="coinmarketapi-totalsupply">Loading</span> HODL
+                </div>
+                <!-- *** CoinMarketCap API END *** -->
+		    </div>
         </div>
 </section>
 
@@ -634,5 +646,6 @@ window.setInterval(function(){
 <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'></script>
 <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
 <script type='text/javascript' src='js/b4st.js'></script>
+<script type='text/javascript' src='js/coinmarketapi.js'></script>
 </body>
 </html>
