@@ -72,26 +72,8 @@
 
                 <!-- CoinMarketCap API -->
 
-                <!-- CoinMarketCap API -->
-								<?php
-									$tick = file_get_contents('https://api.coinmarketcap.com/v1/ticker/hodlcoin/');
-									$data = json_decode($tick, TRUE);
-									$market = $data[0]["market_cap_usd"];
-									$volume = $data[0]["24h_volume_usd"];  
-									$supply = $data[0]["available_supply"];
-									$total = $data[0]["total_supply"];   ?>   
-								<div class="col-md-3 coinmarketcap">
-									<strong>Market Cap</strong><br> <? echo $market; ?> USD
-								</div>
-								<div class="col-md-3 coinmarketcap">
-									<strong>Volume (24h)</strong><br><? echo $volume; ?> USD
-								</div>
-								<div class="col-md-3 coinmarketcap">
-									<strong>Circulating Supply</strong><br><? echo $supply; ?> HODL
-								</div>
-								<div class="col-md-3 coinmarketcap">
-									<strong>Total Supply</strong><br><? echo $total; ?> HODL
-								</div>               
+                <div class="col-md-3 coinmarketcap"><strong>Market Cap</strong><br>1538787.0 USD</div><div class="col-md-3 coinmarketcap"><strong>Volume (24h)</strong><br>150.515 USD</div><div class="col-md-3 coinmarketcap"><strong>Circulating Supply</strong><br>145343935.0 HODL</div><div class="col-md-3 coinmarketcap"><strong>Total Supply</strong><br>160000000.0 HODL</div>            </div>
+              
 		</div>
         </div>
 </section>
