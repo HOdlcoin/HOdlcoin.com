@@ -108,10 +108,10 @@
 					<strong>Volume (24h)</strong><br> <span id="coinmarketapi-volume">Loading</span> USD
 				</div>
 				<div class="col-md-3 coinmarketcap">
-					<strong>Circulating Supply</strong><br> <span id="coinmarketapi-supply">Loading</span> HODL
+					<strong>Circulating Supply</strong><br> <span id="coinmarketapi-supply">152,276,325</span> HODL
 				</div>
 				<div class="col-md-3 coinmarketcap">
-					<strong>Total Supply</strong><br> <span id="coinmarketapi-totalsupply">Loading</span> HODL
+					<strong>Total Supply</strong><br> <span id="coinmarketapi-totalsupply">175,000,000</span>
                 </div>
                 <!-- *** CoinMarketCap API END *** -->
 		    </div>
@@ -679,8 +679,8 @@ window.setInterval(function(){
            $.get("https://api.coinmarketcap.com/v1/ticker/hodlcoin/", function(data) {            
                 document.getElementById("coinmarketapi-marketcap").innerHTML = new Intl.NumberFormat({ minimumFractionDigits: 2}).format(data[0]['market_cap_usd']);
                 document.getElementById("coinmarketapi-volume").innerHTML = new Intl.NumberFormat().format(data[0]['24h_volume_usd']);
-                document.getElementById("coinmarketapi-supply").innerHTML = new Intl.NumberFormat().format(data[0]['available_supply']);
-                document.getElementById("coinmarketapi-totalsupply").innerHTML = new Intl.NumberFormat().format(data[0]['total_supply']);
+                //document.getElementById("coinmarketapi-supply").innerHTML = new Intl.NumberFormat().format(data[0]['available_supply']);
+                //document.getElementById("coinmarketapi-totalsupply").innerHTML = new Intl.NumberFormat().format(data[0]['total_supply']);
            })
        }
 
