@@ -202,6 +202,10 @@ a:hover {
     box-shadow: 1px 1px 1px #d4d4d4;
 }
 
+.gethodl-box h4 {
+    color: #222;
+}
+
 .gethodl-box img {
     padding: 10px 10px;
 }
