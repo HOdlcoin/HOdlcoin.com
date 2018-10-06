@@ -693,12 +693,16 @@ window.setInterval(function(){
 <script type='text/javascript' src='js/b4st.js'></script>
 <script>
        function LoadCoinmarketcap() {
-           $.get("https://api.coinmarketcap.com/v1/ticker/hodlcoin/", function(data) {            
-                document.getElementById("coinmarketapi-marketcap").innerHTML = new Intl.NumberFormat({ minimumFractionDigits: 2}).format(data[0]['market_cap_usd']);
-                document.getElementById("coinmarketapi-volume").innerHTML = new Intl.NumberFormat().format(data[0]['24h_volume_usd']);
-                //document.getElementById("coinmarketapi-supply").innerHTML = new Intl.NumberFormat().format(data[0]['available_supply']);
-                //document.getElementById("coinmarketapi-totalsupply").innerHTML = new Intl.NumberFormat().format(data[0]['total_supply']);
-           })
+	   $.ajax({
+		   type: "GET",
+		   url: "https://api.coinmarketcap.com/v1/ticker/hodlcoin/",
+		   dataType: 'json',
+		   crossDomain: true,
+		   success: function(data){
+			document.getElementById("coinmarketapi-marketcap").innerHTML = new Intl.NumberFormat({ minimumFractionDigits: 2}).format(data[0]['market_cap_usd']);
+			document.getElementById("coinmarketapi-volume").innerHTML = new Intl.NumberFormat().format(data[0]['24h_volume_usd']);
+		   }
+	   });
        }
 
        LoadCoinmarketcap();
