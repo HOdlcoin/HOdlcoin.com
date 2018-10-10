@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html class="no-js" lang="en-US">
 <head>
@@ -81,9 +82,9 @@
         <div class="container">
             <div class="row text-center">
                <div class="col md-12">
-                    <h1 class="intro-title">It's the year of the squirrel</h1> 
+                    <h1 class="intro-title">It's the year of the squirrel</h1>
                </div>
-                
+
                 <div class="col-md-12">
                     <p class="intro-message" data-animate="fadeInUp">Hodlcoin is CPU mineable, by the people for the people<br> Rewards are earned on active HODL balances or you can lock your HODL away for a term and earn more<br> Check out our active and growing community, roadmap, and plans for the future<br>
                 </p>
@@ -100,7 +101,7 @@
 
                 <!-- *** CoinMarketCap API***
                 _________________________________________________________ -->
-  
+
 				<div class="col-md-3 coinmarketcap">
 					<strong>Market Cap</strong><br> <span id="coinmarketapi-marketcap">Loading</span> USD
 				</div>
@@ -137,7 +138,7 @@
                                 <p>No Premine/Instamine/Ninja</p>
                             </div>
                                </div>
-                                
+
 
                             <div class="col-md-4" data-animate="fadeInUp">
                                <div class="specifications-box">
@@ -150,7 +151,7 @@
 
                             <div class="col-md-4" data-animate="fadeInUp">
                                <div class="specifications-box">
-                                <div class="icon-orange"><i class="fas fa-code"></i> 
+                                <div class="icon-orange"><i class="fas fa-code"></i>
                                 </div>
                                 <h3 class="heading">Subsidy</h3>
                                 <p>50 HODL subsidy per block </p>
@@ -180,7 +181,7 @@
 
                             <div class="col-md-4" data-animate="fadeInUp">
                                <div class="specifications-box">
-                                <div class="icon-yellow"><i class="fas fa-database"></i> 
+                                <div class="icon-yellow"><i class="fas fa-database"></i>
                                 </div>
                                 <h3 class="heading">Codebase</h3>
                                 <p>Bitcoin 0.11.2</p>
@@ -188,7 +189,7 @@
                             </div>
 
                         </div>
-                        
+
                         <div class="row specifications2">
                             <div class="col-lg-12" data-animate="fadeInUp">
 				<h3 class="heading">Maximum Supply</h3><p>191,586,500 HODL By March 2020, followed by 5.5% inflation rate, declining to 3% over 16 years</p>
@@ -207,11 +208,11 @@
             <!-- /.section -->
 
             <!-- *** SPECIFICATION END *** -->
-            
-            
-            <!-- *** WALLET *** 
+
+
+            <!-- *** WALLET ***
             _____________________________________________________-->
-            
+
             <div class="wallet-class" id="wallet">
                 <div class="container text-center">
                     <div class="row">
@@ -227,7 +228,7 @@
                                 <a class="btn btn-success" href="https://github.com/HOdlcoin/HOdlcoin/releases/download/v3.0.2/hodlcoin-3.0.2-win64-setup.exe" role="button">64bit</a> <a class="btn btn-success" href="https://github.com/HOdlcoin/HOdlcoin/releases/download/v3.0.2/hodlcoin-3.0.2-win64.zip" role="button">64bit binaries</a><a class="btn btn-success" href="https://github.com/HOdlcoin/HOdlcoin/releases/download/v3.0.1/hodlcoin-3.0.1-win32-setup-unsigned.exe" role="button">32bit</a>
                             </div>
                        </div>
-                        
+
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="wallet-download">
@@ -277,18 +278,18 @@
                     </div>
                 </div>
             </div>
-            
-            
-            
+
+
+
             <!-- *** WALLET END *** -->
-            
-            
+
+
             <!-- *** HODL ***
             _____________________________________________________ -->
-            
-            
+
+
             <div class="hodl" id="hodl">
-            	<div class="container">  
+            	<div class="container">
                 <div class="row">
                    <div class="col-lg-12 text-center">
                             <h1 class="section-title" data-animate="fadeInDown">hodl</h1>
@@ -302,11 +303,11 @@
                             <p>1 year term (9.9% APR)<br>6 month term (9.1% APR)<br>3 month term (7.75% APR)<br>1 month term (6.1% APR)<br>Active balance (5% APR)</p>
                     </div>
                     <div class="col-lg-6 col-md-6">
-                        <h3>Current interest Rates</h3>  
+                        <h3>Current interest Rates</h3>
                         <table class="table">
                             <tbody>
                                 <tr>
-                                    <th scope="row">Current bonus rate:</th>
+                                    <th scope="row">Current Deposit Bonus Rate:</th>
                                     <td><div id="bonusrate"></div></td>
                                 </tr>
                                 <tr>
@@ -314,7 +315,7 @@
                                     <td><div id="standardrate"></div></td>
                     </tr>
                     <tr>
-                        <th scope="row">Total APR:</th>
+                        <th scope="row">Total APR Before Multiplier:</th>
                         <td><div id="totalrate"></div></td>
                     </tr>
                     <tr>
@@ -324,10 +325,10 @@
                 </tbody>
             </table>
 
-           </div>         
-           
+           </div>
+
            <div class="col-lg-6 col-md-6">
-               <h3>Term Deposit Calculator</h3>  
+               <h3>Term Deposit Calculator</h3>
                 <table class="table">
                 <tbody>
                     <tr>
@@ -337,28 +338,36 @@
                     <tr>
                         <th scope="row">Days:</th>
                         <td><input value="365" id="days" style="text-align: right"/></td>
-                        
+
                     </tr>
                     <tr>
                         <th scope="row">Interest From Standard Rate:</th>
                         <td><div id="tdstandardinterest"></div></td>
                     </tr>
+                    <!--
                     <tr>
                         <th scope="row">Interest From Bonus Rate:</th>
                         <td><div id="tdbonusinterest"></div></td>
                     </tr>
+                  -->
                     <tr>
-                        <th scope="row">Interest:</th>
+                        <th scope="row">Deposit Bonus Before Multiplier:</th>
+                        <td><div id="tdbonus"></div></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Current Total Bonus:</th>
                         <td><div id="tdtotalinterest"></div></td>
                     </tr>
                     <tr>
                         <th scope="row">Multiplier:</th>
                         <td><div id="tdmultiplier"></div></td>
                     </tr>
+                    <!--
                     <tr>
                         <th scope="row">Bonus Due to Term Deposit:</th>
                         <td><div id="tdbonus"></div></td>
                     </tr>
+                  -->
                     <tr>
                         <th scope="row">Total Interest At Maturation:</th>
                         <td><div id="tdtotal"></div></td>
@@ -370,29 +379,29 @@
                 </tbody>
             </table>
 
-           </div>         
-           
-           </div>       
-       </div>        
+           </div>
+
+           </div>
+       </div>
     </div>
-            
+
             <!-- *** HODL END *** -->
 
-            
+
             <!-- *** GET HODL ***
         _________________________________________________________ -->
-            
+
             <div class="gethodl" id="get">
                 <div class="container text-center">
                     <div class="row">
                         <div class="col-lg-12">
                             <h2 class="section-title" data-animate="fadeInDown">get hodlcoin</h2>
-                            <p class="intro-message">HODL can be purchased directly on an exchange. It can also be mined via a computationally-complex 
+                            <p class="intro-message">HODL can be purchased directly on an exchange. It can also be mined via a computationally-complex
                                 blockchain-based process using only a CPU. This means that almost anyone with a computer can mine HODL.
                                 More details about the mining process can be found in the specifications section and elsewhere
                                 throughout the HOdlverse. Exchange and mining related links can be found below.</p>
                         </div>
-                        
+
                         <div class="col-lg-6">
                             <h3>Exchanges</h3>
                             <p>A cryptocurrency exchange is a place to buy and sell HODL for Bitcoin(BTC) or other cryptocurrencies.
@@ -403,7 +412,7 @@
                             <h3>Mining pool</h3>
                             <p>A mining pool is a service that allows multiple people to combine their computational power
                                 in order to generate one block (thus creating more HODL) and share the reward.<br></p>
-                        </div>                        
+                        </div>
                     </div>
 		<div class="row">
                         <div class="col-lg-6">
@@ -418,7 +427,7 @@
                                     <a class="btn btn-success" target="_blank" href="https://palitanx.com/exchange/LTC-HODL" role="button">HODL - LTC</a>
                                     <a class="btn btn-success" target="_blank" href="https://palitanx.com/exchange/BTC-HODL" role="button">HODL - BTC</a>
                                 </div>
-                                
+
                             </div>
                             <div class="gethodl-box">
                                     <h4>Crypto Hub</h4>
@@ -438,21 +447,20 @@
                     </div>
                 </div>
             </div>
-            
-            
+
+
             <!-- *** get HODL END *** -->
-            
-            
+
+
             <div class="join" id="join">
                 <div class="container text-center">
                     <div class="row">
                         <div class="col-lg-12">
                             <h2 class="section-title">Get involved with HOdlcoin</h2>
-                            <p class="intro-message">Whether crypto novice or guru, there are many good reasons to go with HODL,
-                                the name that is synonymous with cryptocurrency. 
-                                ....and don't forget to check out HODLDAY.COM, as it features our roadmap. 
-                                A community HUB, documentation, downloads, step by step guides for beginners, a cryptocurrency learning center, and more
-                                will soon be available there.</p>
+                            <p class="intro-message">Whether crypto novice or guru, there are many reasons to get into HODL,
+                              the name that is synonymous with cryptocurrency. Also, don't forget to check out HODLDAY.COM.
+                              It allows us to keep our main site professional while maintaining the spirit and humor that made HODL great.
+                               It features our roadmap and will serve as community hub featuring documentation, downloads, tutorials, and more.</p>
                         </div>
                         <div class="col-lg-12">
                             <h3>social media</h3>
@@ -474,14 +482,14 @@
                                 <i class="fab fa-youtube fa-4x"></i>
                                 <h3>Youtube</h3>
                             </div>
-                        </div> 
+                        </div>
                         <div class="col-md-3">
                             <div class="instagram">
                                 <i class="fab fa-instagram fa-4x"></i>
                                 <h3>Instagram</h3>
                             </div>
                         </div>
-                        
+
                         <div class="col-lg-12">
                             <h3>community</h3>
                         </div>
@@ -512,8 +520,8 @@
 
                     </div>
                 </div>
-            </div>      
-<!--            
+            </div>
+<!--
 <div class="faq" id="faq">
     <div class="container text-center">
         <div class="row">
@@ -587,8 +595,8 @@
         </div>
     </div>
 </div> -->
-            
-            
+
+
             <div class="signup" id="signup">
                 <div class="container text-center">
                     <div class="row">
@@ -608,71 +616,84 @@
                     </div>
                 </div>
             </div>
-            
+
                     <script>
+
 window.setInterval(function(){
-		maxBonusRate=(Math.pow((1+(1/Math.pow(2,16))),(561*365))-1)*100;
-		//maxBonusRate=(1+(1/Math.pow(2,16)));
-		maxStandardRate=(Math.pow((1+(1/Math.pow(2,22))),(561*365))-1)*100;
-		//maxStandardRate=1+(1/Math.pow(2,22));
-		document.getElementById("standardrate").innerHTML=Number(maxStandardRate).toFixed(4)+"%";
-		
-		
-        totalSeconds=Date.now()/1000-1495733454;
-		
-		//944 is a correction - adjust as necessary if blocks drift
-		totalBlocks=totalSeconds/154+241910;
-		
-		curbonusrate=maxBonusRate*Math.pow(((409530-totalBlocks)/409530),4);
-		
-		//Daily Rates
-		dailyBonusRate=(Math.pow((1+(1/Math.pow(2,16))),(561))-1)*100;
-		dailyStandardRate=(Math.pow((1+(1/Math.pow(2,22))),(561))-1)*100;
-		
-		curDailyBonusRate=dailyBonusRate*Math.pow(((409530-totalBlocks)/409530),4);
-		
-		
-		document.getElementById("bonusrate").innerHTML=Number(curbonusrate).toFixed(4)+"%";
-		
-		document.getElementById("totalrate").innerHTML=Number(curbonusrate+maxStandardRate).toFixed(4)+"%";
-		
-		document.getElementById("dailyrate").innerHTML=Number(curDailyBonusRate+dailyStandardRate).toFixed(4)+"%";
-		
-		//alert("blockEstimate:"+totalBlocks);
-		
-		days=Number(document.getElementById("days").value);
-		principal=Number(document.getElementById("principal").value);
-		
+
+
+    //blocktime == 154s
+
+		maxBonusRate = (Math.pow((1+(1/Math.pow(2,22))), (561*365))-1) * 100;
+		   //maxBonusRate=(1+(1/Math.pow(2,16)));
+		maxStandardRate = (Math.pow((1+(1/Math.pow(2,22))), (561*365))-1) * 100;
+		   //maxStandardRate=1+(1/Math.pow(2,22));
+
+		    document.getElementById("standardrate").innerHTML = "5.0000%";//Number(maxStandardRate).toFixed(4)+"%";
+
+     totalSeconds = Date.now()/1000-1495733454;
+
+		   //944 is a correction - adjust as necessary if blocks drift
+		 totalBlocks = totalSeconds/154+241910;
+
+		 curbonusrate = maxBonusRate //* Math.pow(((409530-totalBlocks)/409530),4);
+
+		   //Daily Rates
+		dailyBonusRate = (Math.pow((1+(1/Math.pow(2,16))),(561))-1) * 100;
+		dailyStandardRate = (Math.pow((1+(1/Math.pow(2,22))),(561))-1) * 100;
+		curDailyBonusRate = dailyBonusRate*Math.pow(((409530-totalBlocks)/409530), 4);
+
+
+	  	document.getElementById("bonusrate").innerHTML = Number(curbonusrate).toFixed(4)+"%";
+
+	  	document.getElementById("totalrate").innerHTML = Number(curbonusrate+maxStandardRate).toFixed(4)+"%";
+
+	  	document.getElementById("dailyrate").innerHTML = Number((maxStandardRate + curbonusrate) / 365).toFixed(4)+"%";//Number(curDailyBonusRate+dailyStandardRate).toFixed(4)+"%";
+
+		   //alert("blockEstimate:"+totalBlocks);
+
+		days = Number(document.getElementById("days").value);
+		principal = Number(document.getElementById("principal").value);
+
 
 		if(days>365){
-			days=365;
+			  days=365;
 			}
-		
-		
-		termDepositStandardInterest=(Math.pow((1+(1/Math.pow(2,22))),(561*days))-1)*principal;
-		termDepositBonusInterest=(Math.pow((1+(1/Math.pow(2,16))),(561*days))-1)*Math.pow(((409530-totalBlocks)/409530),4)*principal;
-		
-		document.getElementById("tdstandardinterest").innerHTML=Number(termDepositStandardInterest).toFixed(4);
-		document.getElementById("tdbonusinterest").innerHTML=Number(termDepositBonusInterest).toFixed(4);
-		document.getElementById("tdtotalinterest").innerHTML=Number(termDepositStandardInterest+termDepositBonusInterest).toFixed(4);
-		
-		termDepositMultiplier =0;
-		if(days>2){
-			termDepositMultiplier =(1-Math.pow(((409530-561*days)/409530),6));
-		}
-		document.getElementById("tdmultiplier").innerHTML=Number(termDepositMultiplier).toFixed(4);
-		tdBonus=(termDepositStandardInterest+termDepositBonusInterest)*termDepositMultiplier;
-		
-		document.getElementById("tdbonus").innerHTML=Number(tdBonus).toFixed(4);
-		totalMaturation=tdBonus+termDepositStandardInterest+termDepositBonusInterest;
-		
-		document.getElementById("tdtotal").innerHTML=Number(totalMaturation).toFixed(4);
-		
-		principalPlusInterest=Number(principal)+totalMaturation;
-		document.getElementById("tdinc").innerHTML=Number(principalPlusInterest).toFixed(4);
+
+
+		termDepositStandardInterest = (Math.pow((1+(1/Math.pow(2,22))),(561*days)) - 1) * principal;
+		termDepositBonusInterest = (Math.pow((1+(1/Math.pow(2,22))),(561*days))-1)*Math.pow(((409530-totalBlocks)/409530),4) * principal;
+
+		  document.getElementById("tdstandardinterest").innerHTML = Number(termDepositStandardInterest).toFixed(4);
+		  //document.getElementById("tdbonusinterest").innerHTML = Number(termDepositBonusInterest).toFixed(4);
+	  	document.getElementById("tdtotalinterest").innerHTML = Number(termDepositStandardInterest * 2 +termDepositBonusInterest).toFixed(4);
+
+		termDepositMultiplier = 0;
+		  if(days>2){
+			  termDepositMultiplier = (1-Math.pow(((409530-561*days)/409530), 6));
+		   }
+
+  	    document.getElementById("tdmultiplier").innerHTML = Number(termDepositMultiplier).toFixed(4);
+
+	 	tdBonus = (termDepositStandardInterest+termDepositBonusInterest)//*termDepositMultiplier;
+
+		    document.getElementById("tdbonus").innerHTML = Number(tdBonus).toFixed(4);
+
+    totalMaturation = tdBonus * termDepositMultiplier + termDepositStandardInterest ;
+
+		    document.getElementById("tdtotal").innerHTML = Number(totalMaturation).toFixed(4);
+
+	 	principalPlusInterest = Number(principal)+totalMaturation;
+
+	    	document.getElementById("tdinc").innerHTML = Number(principalPlusInterest).toFixed(4);
+
+
+
+
 
 
 	}, 500);
+
 </script>
 
 <div class="footer" id="footer">
